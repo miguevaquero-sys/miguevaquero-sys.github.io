@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main class="publication-page">
+  <a class="text-primary-600 dark:text-primary-400 hover:underline" href="{{ "publications/" | relURL }}">&larr; All publications</a>
+  <article data-pagefind-body>
+    <header class="prose prose-slate dark:prose-invert max-w-none mt-6">
+      <h1>{{ .Title }}</h1>
+      <p>{{ partial "page_metadata_authors.html" . }}</p>
+      {{ $publication := partial "functions/resolve_publication" . }}
+      <p>{{ $publication.display | markdownify }} &middot; {{ .Date.Format "2006" }}</p>
+    </header>
+    <section class="prose prose-slate dark:prose-invert max-w-none mt-8" aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      {{ .Params.abstract | markdownify }}
+    </section>
+    <div class="flex flex-wrap gap-3 mt-6" aria-label="Paper links">
+      {{ partial "page_links.html" (dict "page" . "is_list" false) }}
+    </div>
+  </article>
+</main>
+{{ end }}

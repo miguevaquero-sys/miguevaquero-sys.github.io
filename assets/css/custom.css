@@ -1,0 +1,140 @@
+body {
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 5% 0, #d9e9fc 0, transparent 42rem),
+    radial-gradient(ellipse at 95% 12rem, #ddf3ef 0, transparent 40rem),
+    linear-gradient(150deg, #f5f9ff, #f8fbfd);
+}
+
+.dark body {
+  background:
+    radial-gradient(ellipse at 5% 0, #172e50 0, transparent 42rem),
+    radial-gradient(ellipse at 95% 12rem, #143638 0, transparent 40rem),
+    linear-gradient(150deg, #0d1729, #111e32);
+}
+
+/* Reuse the theme's fixed background layer for the decorative phase portrait. */
+#page-bg {
+  inset: 0;
+  pointer-events: none;
+  background: url("../media/phase-portrait.svg") center / 100% 100% no-repeat;
+  opacity: 0.45;
+  mask-image: linear-gradient(to right, #000, transparent 28%, transparent 72%, #000);
+}
+
+.dark #page-bg {
+  opacity: 0.35;
+}
+
+@media (max-width: 640px) {
+  #page-bg,
+  .dark #page-bg {
+    opacity: 0.2;
+  }
+}
+
+.cursor-glow {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .cursor-glow {
+    display: block;
+    position: fixed;
+    top: -24rem;
+    left: -24rem;
+    width: 48rem;
+    height: 48rem;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(64 139 236 / 18%), rgb(37 183 171 / 10%) 35%, transparent 70%);
+    opacity: 0;
+    transition: transform 160ms ease-out, opacity 240ms ease-out;
+  }
+
+  .dark .cursor-glow {
+    background: radial-gradient(circle, rgb(68 148 255 / 16%), rgb(45 212 191 / 8%) 35%, transparent 70%);
+  }
+
+  .cursor-glow.is-visible {
+    opacity: 1;
+  }
+}
+
+.profile-email {
+  gap: 0.5rem;
+  max-width: 100%;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.profile-email svg {
+  flex-shrink: 0;
+}
+
+.profile-email span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.publications-title h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+  text-align: center;
+}
+
+.publication-page {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.publication-page h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.affiliation-logo {
+  display: inline-block;
+  max-width: 100%;
+  padding: 1.25rem 1.75rem;
+  background: #00205b;
+  border-radius: 0.5rem;
+}
+
+.affiliation-logo:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.affiliation-logo img {
+  display: block;
+  width: 180px;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .page-body {
+    animation: page-zoom-in 0.8s ease both;
+  }
+}
+
+@keyframes page-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

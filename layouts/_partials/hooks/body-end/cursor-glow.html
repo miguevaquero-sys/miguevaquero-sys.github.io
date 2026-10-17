@@ -1,0 +1,3 @@
+<div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+{{ $script := resources.Get "js/cursor-glow.js" | minify | fingerprint "sha256" }}
+<script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>

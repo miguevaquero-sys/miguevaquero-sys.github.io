@@ -1,0 +1,123 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Miguel Vaquero
+  given: Miguel
+  family: Vaquero
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+postnominals:
+  - PhD
+role: Assistant Professor (Tenure Track)
+bio: |
+  I am an Assistant Professor at IE University's School of Science and Technology.
+  My research is in applied mathematics and engineering, with a focus on geometric
+  mechanics, structure-preserving numerical methods, optimization and control, and
+  data-driven methods for dynamical systems.
+
+affiliations:
+  - name: IE University — School of Science and Technology
+
+links:
+  - icon: at-symbol
+    url: mailto:mvaquero@faculty.ie.edu
+    label: Email
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=SlPNpVMAAAAJ&hl=en
+    label: Google Scholar
+
+interests:
+  - Geometric structure in computation and learning
+  - Optimization, control, and distributed computation
+  - Beltrami fields and rigidity
+  - Decision-making and inference under uncertainty
+
+education:
+  - degree: PhD in Mathematics
+    institution: ICMAT (Severo Ochoa Distinction)
+    start: 2011-10-01
+    end: 2015-09-30
+    summary: |
+      FPI scholarship. Advisor: Manuel de León. Thesis: *On the Geometry of the Hamilton-Jacobi Equation*.
+      Defended November 27, 2015, with Cum Laude distinction.
+  - degree: MSc in Mathematics
+    institution: University of Santiago de Compostela
+    start: 2009-01-01
+    end: 2010-12-31
+    summary: |
+      Thesis: *Euler–Poincaré and Lie–Poisson reduction*. Advisor: M. Salgado.
+  - degree: BSc in Mathematics (5-year degree, with Honors)
+    institution: University of Santiago de Compostela
+    start: 2004-01-01
+    end: 2009-12-31
+    summary: |
+      Premio Extraordinario de la Universidad de Santiago de Compostela.
+
+experience:
+  - role: Assistant Professor (Tenure Track)
+    org: IE University — School of Science and Technology
+    start: 2021-01-01
+    summary: |
+      Teaching data analysis, mathematics, calculus, and numerical methods while conducting research in applied mathematics and engineering.
+  - role: Postdoctoral Researcher
+    org: University of California, San Diego — Mechanical and Aerospace Engineering
+    start: 2017-11-01
+    end: 2020-11-30
+    summary: |
+      Worked with Jorge Cortés on topics in applied mathematics and engineering.
+  - role: Postdoctoral Researcher (ERC Contract)
+    org: ICMAT
+    start: 2015-11-01
+    end: 2017-05-31
+    summary: |
+      Worked with Daniel Peralta-Salas on the ERC project *Invariant manifolds in dynamical systems and PDE*.
+  - role: Senior Researcher
+    org: University of La Laguna
+    start: 2011-04-01
+    end: 2011-10-31
+    summary: |
+      Research on differential geometry, mechanics, field theory, Hamilton–Jacobi theory, and harmonic maps.
+
+awards:
+  - title: ANECA Accreditation — Profesor Contratado Doctor (PCD)
+    awarder: ANECA
+    date: "2026-01-01"
+    summary: Positive national evaluation for Profesor/a Contratado/a Doctor/a.
+    icon: hero/check-badge
+  - title: ANECA Accreditation — Profesor de Universidad Privada (PUP)
+    awarder: ANECA
+    date: "2026-01-01"
+    summary: Positive national evaluation for Profesor/a de Universidad Privada.
+    icon: hero/check-badge
+  - title: Editor, Geometric Mechanics
+    awarder: Geometric Mechanics
+    date: "2025-01-01"
+    summary: Editor of the scientific journal *Geometric Mechanics* since 2025.
+    icon: hero/book-open
+  - title: Teaching Excellence Awards
+    awarder: IE University
+    date: "2021-01-01"
+    summary: 20+ IE Teaching Excellence Awards since 2021; Most Engaged Professor Award (2023–24), nominated again in 2024–25.
+    icon: hero/trophy
+  - title: FPI Scholarship
+    awarder: Spanish national program
+    date: "2011-01-01"
+    summary: Competitive national grant supporting doctoral studies at ICMAT (2011–2015).
+    icon: hero/academic-cap
+  - title: Beca de la Xunta de Galicia
+    awarder: Xunta de Galicia
+    date: "2009-09-01"
+    summary: Competitive regional grant for master's studies (2009–2010).
+    icon: hero/academic-cap
+  - title: Premio Extraordinario de Fin de Carrera
+    awarder: University of Santiago de Compostela
+    date: "2009-01-01"
+    summary: Award for top academic achievement.
+    icon: hero/trophy
+  - title: Beca de colaboración
+    awarder: University of Santiago de Compostela
+    date: "2008-09-01"
+    summary: Undergraduate research grant, *Syzygies of Algebraic Curves* (2008–2009).
+    icon: hero/academic-cap
